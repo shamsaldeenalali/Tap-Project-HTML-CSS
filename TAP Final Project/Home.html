@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins">
+
+    <title>TAP</title>
+
+    <style>
+         body {
+        font-family: 'Poppins', sans-serif;
+        background-color: lightgrey;
+        margin: 0;
+    }
+
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            color: #008AAA;
+        }
+
+        header i {
+            margin-right: 8px;
+            font-family: 'Poppins';
+        }
+
+        header p {
+            margin-right: 20px;
+            font-family: 'Poppins';
+        }
+
+        header a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Poppins';
+        }
+
+        header a:hover {
+            color: blue;
+        }
+
+        p a {
+            text-decoration: none;
+            font-family: 'Poppins';
+        }
+
+        .highlight-text {
+            font-size: 20px;
+            color: #008AAA;
+        }
+
+        .brown-text {
+            color: #D1884F;
+        }
+
+        .blue-text {
+            font-size: 20px;
+            color: #008AAA;
+        }
+
+        .image {
+            max-width: 100%;
+        height: 10px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        }
+
+        .button1 {
+            background-color: lightgreen;
+            border-radius: 5px;
+        }
+
+        .button2 {
+            background-color: #3BBADB;
+            border-radius: 5px;
+        }
+
+        .hidden-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            position: absolute;
+        }
+
+        .hidden-content:target {
+            max-height: 100px;
+            transition: max-height 0.10s ease-in;
+        }
+
+        .hidden-content:not(:target) {
+            max-height: 0;
+            transition: max-height 0.10s ease-out;
+        }
+
+        .read-more-link {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 40px;
+            padding: 20px;
+            position: relative;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: lightgrey;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            color: #008AAA;
+        }
+
+        .image {
+            width: 20%;
+            height: 50%;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 40px 10px;
+            padding: 20px;
+            position: relative;
+        }
+
+        @media only screen and (min-width: 600px) {
+        .image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
+
+     @media only screen and (min-width: 1024px) {
+        .image {
+            width: 550px;
+            float: right;
+            margin-bottom: 200px;
+        }
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        .image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .button1,
+        .button2 {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+       
+    </style>
+</head>
+
+<body>
+
+      <header>
+          <nav>
+            <i class="fas fa-solid fa-house"><a href="home.html"> Home </a></i>
+            <i class="fas fa-solid fa-user"><a href="About us.html"> About us </a></i>
+            <i class="fas fa-solid fa-phone"><a href="contact.html"> Contact Me </a> </i>
+        </nav>
+    </header>
+
+            <section>
+             <article>
+               <br>
+             <p>
+                <br><span class="blue-text">Welcome to IOT site</span> <br> <br> <br>
+                 <span class="highlight-text">Internet of Things <br> (IOT) <span class="brown-text">Designer.</span></span>
+                <br>
+                 <img class="image"
+                    src="https://i.pinimg.com/564x/08/d4/60/08d460b878a26b0c6ab954cdbec9f532.jpg">
+                <div class="container">
+                    <p>
+                        Why is Internet of Things (IoT) so important?
+                        Over the past few years, IoT has become one of the most important technologies of the 21st century.
+                        Now that we can connect everyday objects—kitchen appliances, cars,
+                        thermostats, baby monitors—to the internet via embedded devices,
+                        seamless communication is possible between people, processes,
+                        and things.<span class="read-more-link"><a href="#read-more">See More...</a></span>
+                    </p>
+                    <div class="hidden-content" id="read-more">
+                        <p>
+                            What is industrial IoT?
+                            Industrial IoT (IIoT) refers to the application <br> especially with respect to instrumentation and
+                            control of sensors and devices that engage cloud technologies.
+                        </p>
+                    </div>
+                </div>
+                <br><br>
+                <br><br>
+                <br><br>
+            </section>
+                
+            <button type="button" class="button1">Hire me !</button>
+            <button type="button" class="button2">See My Project</button>
+        </article>
+    </section>
+
+    <footer>
+        <p>2024 Your Company Name. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
